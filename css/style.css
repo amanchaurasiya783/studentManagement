@@ -1,0 +1,156 @@
+@import url(variable.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body{
+    background-color: var(--color-background);
+}
+
+.container{
+    background-color: var(--color-background);
+    max-width: 1500px;
+    margin: auto;
+    padding: 20px;
+}
+
+.main{
+    background-color: var(--color-white);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px var(--color-grey132);
+    padding: 20px;
+}
+
+#form{
+    margin: 20px 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+h1{
+    margin: 5px 0 30px 0;
+    text-align: center;
+    font-weight: var(--fw-800);
+    font-size: 2rem;
+}
+
+input{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--color-grey132);
+    border-radius: 3px;
+    padding: 15px 10px;
+    font-weight: var(--fw-600);
+}
+
+input:focus{
+    outline: 2px solid var(--color-skyblue);
+    border: none;
+}
+
+#submit{
+    background-color: var(--color-border);
+    width: 300px;
+    align-self: end;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: var(--color-white);
+    letter-spacing: 1.1px;
+    font-size: 1em;
+    font-weight: var(--fw-600);
+    transition: 0.2s;
+    margin: 20px 0;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: var(--color-hover);
+}
+
+#submit:focus{
+    scale: 0.95;
+    outline: none;
+}
+
+#searchInput{
+    width: 100%;
+    
+}
+
+#searchInput{
+    margin: 25px 0;
+}
+
+table, td, th{
+    border: 1px solid var(--color-border);
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+td, th{
+    padding-left: 15px;
+}
+
+thead{
+    background-color: var(--color-border);
+    color: var(--color-white);
+}
+
+span{
+    color: var(--color-border);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+span:hover{
+    scale: 1.1;
+}
+
+th{
+    text-align: left;
+}
+
+table{
+    font-weight: var(--fw-600);
+    margin: 25px auto;
+    width: 100%;
+}
+
+.cl1{
+    width: 5%;
+    text-align: center;
+}
+.cl2{
+    width: 30%;
+}
+.cl3{
+    width: 23%;
+}
+.cl4, .cl5{
+    width: 11%;
+}
+.cl6{
+    width: 20%;
+}
+
+tr{
+    position: relative;
+}
+
+#degreeCol{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+}

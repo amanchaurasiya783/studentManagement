@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <form action="javascript:void(0)" id="form">
+                <h1>Student Management CRUD</h1>
+                <div class="grid">
+                    <input type="text" name="name" placeholder="Name" required/>
+                    <input type="email" name="email" placeholder="Email" required/>
+                    <input type="number" name="grade" min="0" max="4" step="0.1" placeholder="GPA" required/>
+                    <input type="number" name="age" min="1" max="40" step="1" placeholder="Age" required/>
+                    <input type="text" name="degree" placeholder="Degree" required/>
+                </div>
+                <button id="submit" value="-1" name="submit">Add Student</button>
+            </form>
+
+            <input type="text" name="searchInput" id="searchInput" placeholder="Search By Name, Email or Degree" required/>
+
+            <table id="table">
+                <col class="cl1">
+				<col class="cl2">
+				<col class="cl3">
+				<col class="cl4">
+				<col class="cl5">
+				<col class="cl6">
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        <th>GPA</th>
+                        <th>Degree</th>
+                    </tr>
+                </thead>
+                <tbody id="tableData"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
